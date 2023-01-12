@@ -1,0 +1,73 @@
+@font-face {
+  src:url("../font/Roboto-Regular.ttf");
+  font-family: 'Roboto';
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b6b2b2;
+  margin: 0;
+  font-family: 'Roboto';
+}
+
+.corps {
+  margin: 0 auto;
+  width: 50%;
+  min-width: 800px;
+  background-color: white;
+  padding: 10px;
+  min-height: 100vh;
+}
+p {
+  text-align: justify;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ------------------- Mise en page-------------------- */
+header{
+    height: 250px;
+    background-image: url(../img/matrix.jpg);
+    color: white;
+    margin: 0 auto;
+}
+
+h1{
+    padding-top: 20px;
+    text-align: center;
+}
+footer{
+    position: sticky;
+    margin-top: 50px;
+    padding: 30px ;
+    background-color: #222222;
+    color: #efefef;
+    display: flex;
+    justify-content: space-evenly;
+}
+.vert{
+    background-color: greenyellow;
+}
+.bleu{
+    background-color: rgba(47, 54, 255, 0.773);
+}
+.orange{
+    background-color: orange;
+}
+.aqua{
+    background-color: rgb(177, 240, 240);
+}
+.red{
+    background-color: red;
+}
+.moyen{
+    height: 120vh;
+}
+ #title{
+    padding-top: 100px;
+ }
