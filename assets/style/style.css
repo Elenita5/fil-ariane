@@ -1,1 +1,182 @@
+@font-face {
+    font-family: 'Homard';
+    src: url(../font/Lobster-Regular.ttf);
+}
+@font-face {
+    font-family: "Merryweather";
+    src: url(../font/Merriweather-Regular.ttf);
+}
+body{
+    margin:0px;
+    padding: 0;
+    background-color: #efefefef;
+    font-family: "Homard";
+}
+header{
+    
+    display: flex;
+    height: 400px;
+    padding:0;
+    margin: 0;
+    margin-bottom: 100px;
+}
+h1{
+    color: rgb(197, 36, 36);
+    /* text-shadow: 6px 6px 2px rgba(255,255,255,0.52); */
+    margin: 0 15px;
+}
+h2{
+    text-align: center;
+    font-size: 35px;
+    font-family:'Merryweather';
+    margin-bottom: 100px;
+}
+header div{    
+    flex:5;
+    background-image: url(../img/candleroom.jpg);
+    background-color: #2f2f2f;
+    background-size: cover ;
+    background-position: 30% 60% ;
+    filter: saturate(0.7);
+    margin:0px ;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 45px;
+    font-family: 'Homard';
+}
+nav ul{
+    display: flex;
+    background-color: #ffffff;
+    vertical-align: middle;
 
+
+}
+ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+
+}
+
+li{
+   
+    list-style:none;
+    display: flex;
+    align-items: center;
+   
+}
+
+
+a{
+    color:#2a2a2a;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+}
+a:hover{
+    transition: border-bottom 1s;
+    color:rgb(184, 33, 33);
+    border-bottom:1px solid rgb(184, 33, 33);
+}
+section article{
+    height: 280px;
+    position: relative;
+}
+article h3{
+    position: absolute;
+    right: 80px;
+    bottom: 15px;
+    font-family: "Merryweather";
+    font-size: 25px;
+    color: #efefefef;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.45);
+    text-align: left;
+}
+.icon{
+    display: flex;
+    justify-content: right;
+    width: 20px;
+    text-align: center;
+    
+}
+.icon:first-child{
+    margin-left: 30px;
+}
+.button {
+    font-family: 'Homard';
+    margin: 0;
+    padding: 0;
+    margin: 0;
+}
+.container-fluid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.vide{
+    flex: 1;
+}
+section article:first-child{
+    background-image: url(../img/bougies.jpg);
+    background-repeat: no-repeat;
+    background-position: 80%;
+    transition-property: position;
+    transition-duration: 2s;
+}
+section article:first-child:hover ~h3{
+    bottom:30px;
+    right: 80px;
+}
+section article:nth-child(3){
+    background-image: url(../img/chandelles_categories_poudre.jpg);
+    background-size: cover;
+    background-position: 40%;
+}
+section article:nth-child(5){
+    background-image: url(../img/chandelles_categories_poudre.jpg);
+    background-size: cover;
+    background-position: 40%;
+}
+section article:nth-child(7){
+    background-image: url(../img/chandelles_categories_accessoires.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+.logonavbar{
+    margin-left: 50px;
+    margin-right: 10px;
+    justify-content: left;
+    width: 15%;
+}
+.logo{
+    width: 15%;
+}
+.videverti{
+    min-height:35px;
+    width: 100%;
+}
+.videhori{
+    min-width:35px;
+}
+
+.active{
+    color:rgb(184, 33, 33);
+    border-bottom:1px solid rgb(184, 33, 33);
+}
+#minilogo{
+    color : rgb(219, 131, 145); 
+    font-family: "Homard";
+    font-size: 45px ;
+}
+@media  (max-width:700px) {
+    .videverti{
+        display: none;
+    }
+    
+}
