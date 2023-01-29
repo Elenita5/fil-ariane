@@ -50,15 +50,16 @@
     .col-md-10 {
         width: calc(1000%/12);
     }
+    .col-md-102 {
+        width: calc(1020%/12);
+    }
     .col-md-11 {
         width: calc(1100%/12);
     }
     .col-md-12 {
         width: calc(1200%/12);
     }
-    #menu{
-       visibility: hidden;
-    }
+
 }@media screen and (min-width : 1200px) {
     .container-fluid {
         width:90%;
@@ -98,14 +99,14 @@
     .col-lg-10 {
         width: calc(1000%/12);
     }
+    .col-lg-105 {
+        width: calc(1050%/12);
+    }
     .col-lg-11 {
         width: calc(1100%/12);
     }
     .col-lg-12 {
         width: calc(1200%/12);
-    }
-    #hamburger{
-        display: none;
     }
 }
 
@@ -163,26 +164,7 @@
     .col-sm-12 {
         width: calc(1200%/12);
     }
-    #nothamburger{
-        visibility: hidden;
-    }
-    #menu{
-        visibility: hidden;
-        position: absolute;
-        top:15px;
-        right: 0px;
-        display: block;
-        text-align: center;
-    }
-    #hamburger {
-        position: fixed;
-        top: 0px;
-        right:0px;
-        z-index:5;
-    }
-    #hamburger:hover ~ #menu{
-        visibility:visible ;
-    }
+
 
 }
 

@@ -10,7 +10,7 @@ body{
     margin:0px;
     padding: 0;
     background-color: #efefefef;
-    font-family: "Homard";
+    font-family: "Merryweather";
 }
 header{
     
@@ -19,11 +19,13 @@ header{
     padding:0;
     margin: 0;
     margin-bottom: 100px;
+    position: relative;
 }
 h1{
-    color: rgb(197, 36, 36);
-    /* text-shadow: 6px 6px 2px rgba(255,255,255,0.52); */
+    color: palegoldenrod; 
     margin: 0 15px;
+    position: absolute;
+    right: 0px;
 }
 h2{
     text-align: center;
@@ -31,12 +33,16 @@ h2{
     font-family:'Merryweather';
     margin-bottom: 100px;
 }
+li{
+    list-style: none;
+    text-align: center;
+}
 header div{    
     flex:5;
     background-image: url(../img/candleroom.jpg);
     background-color: #2f2f2f;
     background-size: cover ;
-    background-position: 30% 60% ;
+    background-position: 60% 30% ;
     filter: saturate(0.7);
     margin:0px ;
     display: flex;
@@ -49,34 +55,37 @@ nav ul{
     display: flex;
     background-color: #ffffff;
     vertical-align: middle;
-
-
-}
-ul{
     padding: 0;
     margin: 0;
-    display: flex;
-
 
 }
+nav li{
 
-li{
-
-    list-style:none;
     display: flex;
     align-items: center;
 }
-
-
+h4{
+    color: #eaeaec;
+    text-align: center;
+}
+footer:not(h4){
+    background-color: #050709;
+    color: #6c737d;
+    font-size: 16px;
+    width: 100%;
+}
 a{
-    color:#2a2a2a;
     text-decoration: none;
+}
+nav a{
+    color:#2a2a2a;
+    
     font-size: 25px;
     display: inline-block;
     padding: 10px;
     text-align: center;
 }
-a:hover{
+nav a:hover{
     transition: border-bottom 1s;
     color:rgb(184, 33, 33);
     border-bottom:1px solid rgb(184, 33, 33);
@@ -94,8 +103,66 @@ article h3{
     color: #efefefef;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.45);
     text-align: left;
-    transition: 2s;
+    transition: transform 0.5s;
 }
+footer section:first-child{
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+footer section:last-child{
+    display: flex;
+    width: 100%;
+    border-top: 1px #6c737d solid;
+}
+
+footer ul{
+    padding: 0;
+}
+footer li{
+    margin-bottom: 15px;
+}
+footer a{
+    color :#6c737d;
+}
+footer a:hover{
+    color: palegoldenrod;
+}
+section article{
+    background-image: url(../img/chandelles_categories_bougie.jpg);
+    background-repeat: no-repeat;
+    background-position: 40%;
+    background-size: cover;
+    opacity: 1;
+}
+section article:hover{
+    opacity: 0.9;
+} 
+section article h3:hover{
+    transform: translateY(-30px);
+} 
+section article:nth-child(3){
+    background-image: url(../img/chandelles_categories_fondant.jpg);
+    background-size: cover;
+    background-position: 40%;
+}
+section article:nth-child(5){
+    background-image: url(../img/chandelles_categories_poudre.jpg);
+    background-size: cover;
+    background-position: 40%;
+}
+section article:nth-child(7){
+    background-image: url(../img/chandelles_categories_accessoires.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+footer section:first-child div {
+    border-right: 1px #6c737d solid;
+    width: 25%;
+    text-align: center;
+}
+
 .icon{
     display: flex;
     justify-content: right;
@@ -103,8 +170,11 @@ article h3{
     text-align: center;
     
 }
-.icon:first-child{
-    margin-left:
+.logonavbar{
+    margin-left: 50px;
+    margin-right: 10px;
+    justify-content: left;
+    width: 15%;
 }
 .button {
     font-family: 'Homard';
@@ -121,40 +191,6 @@ article h3{
 }
 .vide{
     width: 850px;
-}
-section article:first-child{
-    background-image: url(../img/chandelles_categories_bougie.jpg);
-    background-repeat: no-repeat;
-    background-position: 40%;
-    background-size: cover;
-    transition-property: position;
-    transition-duration: 2s;
-}
-section article:first-child:hover~h3{
-    bottom:30px;
-    right: 80px;
-    transition: 2s;
-}
-section article:nth-child(3){
-    background-image: url(../img/chandelles_categories_poudre.jpg);
-    background-size: cover;
-    background-position: 40%;
-}
-section article:nth-child(5){
-    background-image: url(../img/chandelles_categories_fondant.jpg);
-    background-size: cover;
-    background-position: 40%;
-}
-section article:nth-child(7){
-    background-image: url(../img/chandelles_categories_accessoires.jpg);
-    background-size: cover;
-    background-position: 50%;
-}
-.logonavbar{
-    margin-left: 50px;
-    margin-right: 10px;
-    justify-content: left;
-    width: 15%;
 }
 .logo{
     width: 15%;
@@ -176,6 +212,27 @@ section article:nth-child(7){
     font-family: "Homard";
     font-size: 45px ;
 }
+#punchline{
+    margin-top: 40px;
+    background-color: #a8cdcf ;
+    height: 500px;
+    padding-top: 15px;  
+}
+#punchline div{
+    font-family: "Merryweather";
+    padding-top: 70px;  
+}
+#punchline div h3{
+    font-size: 60px;
+}
+#punchline div p:last-child{
+    color: lightslategray;
+
+}
+#copyright{
+    text-align: right;
+}
+
 @media  (max-width:700px) {
     .videverti{
         display: none;
