@@ -44,6 +44,14 @@ h4{
 a{
     text-decoration: none;
 }
+label{
+    padding: 5px 0 0 8px;
+    text-align: center;
+}
+sup{
+    font-size: 10px;
+    color: red;
+}
 header div{    
     flex:5;
     background-image: url(../img/candleroom.jpg);
@@ -64,10 +72,8 @@ nav ul{
     vertical-align: middle;
     padding: 0;
     margin: 0;
-
+    overflow: hidden;
 }
-
-
 footer:not(h4){
     background-color: #050709;
     color: #6c737d;
@@ -111,7 +117,6 @@ footer section:first-child{
     padding-top: 70px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: ;
 }
 footer section:last-child{
     display: flex;
@@ -130,6 +135,14 @@ footer a{
 footer a:hover{
     color: palegoldenrod;
 }
+form div{
+    background-color: #bdcce7;
+    border-radius: 10px;
+    padding: 5px 0 015px;
+    margin:30px 0;
+    height: 25px;
+    text-align: ce;
+}
 section article{
     background-image: url(../img/chandelles_categories_bougie.jpg);
     background-repeat: no-repeat;
@@ -139,8 +152,9 @@ section article{
 }
 section article:hover{
     opacity: 0.9;
+    /* transform: background-image scale(2); */
 } 
-section article h3:hover{
+section article:hover  h3{
     transform: translateY(-30px);
 } 
 section article:nth-child(3){
@@ -172,15 +186,12 @@ section div div:first-child{
     background-position: 50%;
     background-image: url(../img/bougietest.png);
 }
-li a img{
-    background-color: #c1c3c6 ;
-}
+
 .icon{
     display: flex;
     justify-content: right;
     width: 20px;
     text-align: center;
-    
 }
 .logonavbar{
     margin-left: 50px;
@@ -227,6 +238,13 @@ li a img{
     color:rgb(184, 33, 33);
     border-bottom:1px solid rgb(184, 33, 33);
 }
+#blockform{
+    width: 20%;
+    border-radius: 15px;
+    border: 1px #9ea9bd solid;
+    background-color: #e2eaec;
+    margin-bottom: 40px;
+}
 #minilogo{
     color : rgb(219, 131, 145); 
     font-family: "Homard";
@@ -246,6 +264,9 @@ li a img{
 }
 #copyright{
     text-align: right;
+}
+#birth_date{
+    width: 100%;
 }
 #punchline div{
     font-family: "Merryweather";
@@ -276,9 +297,17 @@ li a img{
     width: 100%;
     height: 100%;
 }
-@media  (max-width:700px) {
-    .videverti{
+@media (max-width :500px){
+    nav ul li{
+        width:100px ;
+    }
+    nav ul li a{
+        padding: 0px;
+    }
+    .vide {
         display: none;
     }
-    
+    #minilogo{
+        display: none;
+    }
 }
