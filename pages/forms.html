@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav >
+    <nav>
         <ul>
             <li id="minilogo"><img src="../assets/img/Capture - Copie.png" alt="" class="logonavbar"></li>
             <li class="button "><a href="../index.html">Accueil</a></li>
@@ -33,39 +33,63 @@
         <h2>Inscription</h2>
         <section class="container-fluid" id="blockform">
             <form action="#" method="get">
-                <div>
-                    <label for="lname">Nom <sup>*</sup></label> <br>
-                    <input type="text" id="lname" name="lname">
-                    <br>
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <label for="lname">Nom <sup>*</sup></label> <br>
+                        <input type="text" id="lname" name="lname">
+                        <br>
+                    </div>
+                    <div class="col-lg-05"></div>
+                    <div class="col-lg-5 col-md-5 col-sm-11">
+                        <label for="fname">Prenom<sup>*</sup></label> <br>
+                        <input type="text" id="fname" name="fname">
+                        <br>
+                    </div>
                 </div>
-                <div>
-                    <label for="fname">Prenom<sup>*</sup></label> <br>
-                    <input type="text" id="fname" name="fname">
-                    <br>
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-11">
+                        <label for="email">E-mail<sup>*</sup></label></label> <br>
+                        <input type="email" id="email" name="email">
+                    </div>
                 </div>
-                <div>
-                    <label for="email">Adresse e-mail<sup>*</sup></label></label> <br>
-                    <input type="email" id="email" name="email">
+                <div class="col-lg-12 col-md-12 col-sm-11">
+                    <h3> Adresse </h3>
                 </div>
-                <div>
-                    <label for="adress">Adresse postale<sup>*</sup></label></label> <br>
-                    <input type="text" id="adress" name="adress">
+                <div class="col-lg-12 col-sm-11">
+                    <div class="col-lg-5 col-md-5 col-sm-11">
+                        <label for="street">Rue<sup>*</sup></label></label> <br>
+                        <input type="text" id="street" name="street">
+                        <br>
+                    </div>
+                    <div class="col-lg-05 col-md-5 col-sm-11"></div>
+                    <div class="col-lg-5 col-sm-11">
+                        <label for="zipCode">Code Postal<sup>*</sup></label></label> <br>
+                        <input type="text" id="zipCode" name="zipCode">
+                        <br>
+                    </div>
                 </div>
-                <div>
-                    <label for="birth_date">Date de naissance</label> <br>
-                    <input type="date" id="birth_date" name="birth_date">
-                    <br>
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-11">
+                        <label for="city">Ville<sup>*</sup></label></label> <br>
+                        <input type="text" id="city" name="city">
+                        <br>
+                    </div>
                 </div>
-                <div>
-                   
-                    <br>
+                <div class="col-lg-9 col-md-9"></div>
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-11">
+                        <label for="birth_date">Date de naissance</label> <br>
+                        <input type="date" id="birth_date" name="birth_date">
+                        <br>
+                    </div>
                 </div>
+                <input type="submit" id="inscription">
             </form>
         </section>
     </main>
     <footer>
         <section class="container-fluid">
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col-lg-3 col-md-6 col-sm-11">
                 <h4>Contactez-nous</h4>
                 <p>
                     06060606
