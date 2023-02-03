@@ -1,3 +1,5 @@
+/* -------------------- Font Face -------------------- */
+
 @font-face {
     font-family: 'Homard';
     src: url(../font/Lobster-Regular.ttf);
@@ -6,11 +8,12 @@
     font-family: "Merryweather";
     src: url(../font/Merriweather-Regular.ttf);
 }
-body{
-    margin:0px;
-    padding: 0;
-    background-color: #efefefef;
-    font-family: "Merryweather";
+
+/* -------------------- Header -------------------- */
+nav{
+    position: sticky;
+    top: 0px;
+    z-index: 2;
 }
 header{
     
@@ -26,35 +29,6 @@ h1{
     margin: 0 15px;
     position: absolute;
     right: 0px;
-}
-h2{
-    text-align: center;
-    font-size: 35px;
-    font-family:'Merryweather';
-    margin-bottom: 100px;
-}
-li{
-    list-style: none;
-    text-align: center;
-}
-h4{
-    color: #eaeaec;
-    text-align: center;
-}
-a{
-    text-decoration: none;
-}
-div label{
-    padding: 5px 0 0 8px;
-    width: 99%;
-}
-div input{
-    width: 96%;
-    padding: 2px;
-}
-sup{
-    font-size: 10px;
-    color: red;
 }
 header div{    
     flex:5;
@@ -78,49 +52,64 @@ nav ul{
     margin: 0;
     overflow: hidden;
 }
+nav li{
+
+    display: flex;
+    align-items: center;
+}
+nav ul li a{
+    color:#2a2a2a;
+    font-size: 25px;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+}
+nav ul li a:hover{
+    color:rgb(184, 33, 33);
+    border-bottom:1px solid rgb(184, 33, 33);
+}
+.icon{
+    display: flex;
+    justify-content: right;
+    width: 20px;
+    text-align: center;
+}
+.logonavbar{
+    margin-left: 50px;
+    margin-right: 10px;
+    justify-content: left;
+    width: 15%;
+}
+.active{
+    color:rgb(184, 33, 33);
+    border-bottom:1px solid rgb(184, 33, 33);
+}
+.button {
+    font-family: 'Homard';
+    margin: 0;
+    padding: 0;
+    margin-right: 30px;
+}
+#minilogo{
+    color : rgb(219, 131, 145); 
+    font-family: "Homard";
+    font-size: 45px ;
+}
+#logo{
+    width: 15%;
+}
+/* -------------------- Footer -------------------- */
+
 footer:not(h4){
     background-color: #050709;
     color: #6c737d;
     font-size: 16px;
     
 }
-nav li{
-
-    display: flex;
-    align-items: center;
-}
-nav a{
-    color:#2a2a2a;
-    
-    font-size: 25px;
-    display: inline-block;
-    padding: 10px;
-    text-align: center;
-}
-nav a:hover{
-    transition: border-bottom 1s;
-    color:rgb(184, 33, 33);
-    border-bottom:1px solid rgb(184, 33, 33);
-}
-section article{
-    height: 280px;
-    position: relative;
-}
-article h3{
-    position: absolute;
-    right: 80px;
-    bottom: 15px;
-    font-family: "Merryweather";
-    font-size: 25px;
-    color: #efefefef;
-    text-shadow: 2px 2px 2px rgba(0,0,0,0.45);
-    text-align: left;
-    transition: transform 0.5s;
-}
 footer section:first-child{
     padding-top: 70px;
     display: flex;
-    flex-wrap: wrap;
+
 }
 footer section:last-child{
     display: flex;
@@ -139,19 +128,76 @@ footer a{
 footer a:hover{
     color: palegoldenrod;
 }
-form div{
-    flex: 1;
+footer section:first-child div {
+    border-right: 0.5px #6c737d solid;
+    text-align: center;
+    box-sizing: border-box;
 }
-form div .col-lg-5{
-    background-color: #bdcce7;
-    border-radius: 10px;
-    padding: 5px 0 15px;
-    margin:30px 0;
-    height: 25px;
+footer section div:last-child{
+    border: none;
 }
-form div h3{
-    margin: 0 0 40px 40px;
+#copyright{
+    text-align: right;
 }
+
+/* -------------------- Mise en page général -------------------- */
+body{
+    margin:0px;
+    padding: 0;
+    background-color: #efefefef;
+    font-family: "Merryweather";
+}
+::selection{
+    color: white;
+    background-color: #050709;
+}
+h2{
+    text-align: center;
+    font-size: 35px;
+    font-family:'Merryweather';
+    margin-bottom: 100px;
+}
+li{
+    list-style: none;
+    text-align: center;
+}
+h4{
+    color: #eaeaec;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+
+sup{
+    font-size: 10px;
+    color: red;
+}
+.vide{
+    width: 850px;
+}
+
+.videverti{
+    min-height:35px;
+    width: 100%;
+}
+.videhori{
+    min-width:35px;
+}
+.container-fluid{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+/* -------------------- Page Accueil -------------------- */
+/* ------- Catalogue */
+section article{
+    height: 280px;
+    position: relative;
+}
+
 section article{
     background-image: url(../img/chandelles_categories_bougie.jpg);
     background-repeat: no-repeat;
@@ -161,7 +207,6 @@ section article{
 }
 section article:hover{
     opacity: 0.9;
-    /* transform: background-image scale(2); */
 } 
 section article:hover  h3{
     transform: translateY(-30px);
@@ -181,106 +226,24 @@ section article:nth-child(7){
     background-size: cover;
     background-position: 50%;
 }
-footer section:first-child div {
-    border-right: 0.5px #6c737d solid;
-    text-align: center;
-    box-sizing: border-box;
-}
-footer section div:last-child{
-    border: none;
-}
-form div p{
-    font-size: 18px;
-    font-weight:bold;
-    padding: 0 20px;
-}
+/* ------- Punchline */
 
-.icon{
-    display: flex;
-    justify-content: right;
-    width: 20px;
-    text-align: center;
-}
-.logonavbar{
-    margin-left: 50px;
-    margin-right: 10px;
-    justify-content: left;
-    width: 15%;
-}
-.button {
-    font-family: 'Homard';
-    margin: 0;
-    padding: 0;
-    margin-right: 30px;
-}
-.container-fluid{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding-bottom: 20px;
-    justify-content: center;
-}
-.vide{
-    width: 850px;
-}
-.logo{
-    width: 15%;
-}
-.videverti{
-    min-height:35px;
-    width: 100%;
-}
-.videhori{
-    min-width:35px;
-}
-.achat{
-    color:white;
-    background-color: #a8977b;
-    border: none;
-    padding: 5px;
-}
-.achat:hover{
-    background-color: #7f715C;
-}
-.active{
-    color:rgb(184, 33, 33);
-    border-bottom:1px solid rgb(184, 33, 33);
-}
-#blockform{
-    width: 40%;
-    border-radius: 15px;
-    border: 1px #9ea9bd solid;
-    background-color: #e2eaec;
-    
-    display: flex;
-    justify-content: center;
-    margin: 80px auto ;
-}
-#minilogo{
-    color : rgb(219, 131, 145); 
-    font-family: "Homard";
-    font-size: 45px ;
+article h3{
+    position: absolute;
+    right: 80px;
+    bottom: 15px;
+    font-family: "Merryweather";
+    font-size: 25px;
+    color: #efefefef;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.45);
+    text-align: left;
+    transition: transform 0.5s;
 }
 #punchline{
     margin-top: 40px;
     background-color: #a8cdcf ;
     height: 500px;
     padding-top: 15px;  
-}
-#boutique{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    justify-content: center;
-}
-#copyright{
-    text-align: right;
-}
-#inscription{
-    margin: top;
-}
-#birth_date{
-    width: 100%;
 }
 #punchline div{
     font-family: "Merryweather";
@@ -300,33 +263,159 @@ form div p{
     color: lightslategray;
 
 }
+/* -------------------- Boutique -------------------- */
+.achat{
+    color:white;
+    background-color: #a8977b;
+    border: none;
+    padding: 5px;
+}
+.achat:hover{
+    background-color: #7f715C;
+}
+#boutique{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+}
 #boutique li{
-    margin-bottom: 40px;
+    margin-bottom: 40px;;
 }
 #boutique li a{
     color: #2a2a2a;
+    
 }
-#boutique li a:hover{
-    color: #7f715C;
-}
+
 
 #boutique li a div{
     width: 300px;
     height: 300px;
 }
-#boutique li a div img{
+#boutique li a:hover{
+    color: #7f715C;
+}
+/* -------------------- Forms -------------------- */
+form{
     width: 100%;
-    height: 100%;
+}
+form div{
+    flex: 1;
+}
+form div label{
+    padding: 5px 0 0 8px;
+}
+form div input{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px;
+}
+form div h3{
+    margin: 0 0 40px 40px;
 }
 
-@media (max-width :500px){
+form div p{
+    font-size: 18px;
+    font-weight:bold;
+    padding: 0 20px;
+}
+form div .col-lg-5{
+    background-color: #bdcce7;
+    border-radius: 10px;
+    padding: 5px 0 15px;
+    margin:30px 0;
+    height: 25px;
+}
+#blockform{
+    width: 40%;
+    border-radius: 15px;
+    border: 1px #9ea9bd solid;
+    background-color: #e2eaec;
+    
+    display: flex;
+    justify-content: center;
+    margin: 80px auto ;
+}
+/* -------------------- Page d'article -------------------- */
+
+
+#info{
+    background: none;
+    width: 90%;
+    min-height: 600px;
+    margin: auto;
+}
+#detail{
+    width: 90%;
+    margin: auto;
+}
+
+#stock{
+    font-size: 18px;
+    color: green;
+    margin-bottom: 15px;
+}
+#stock:hover{
+    text-decoration: underline;
+}
+#detail p{
+    margin: 24px;
+    color: #7f715C;
+}
+#detail li img {
+    width: 80%;
+    
+}
+#info p:nth-child(2){
+    font-size: 20px;
+    font-weight: 600;
+}
+#info p:nth-child(3){
+    color:#6c737d;
+    margin: 50px 0px;
+}
+#info p:nth-child(5){
+    margin: 30px 0px;
+}
+#info div:nth-child(1){
+    text-align: center;
+}
+#info span{
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 50px 0px;
+}
+#info div img{
+    width: 500px;
+}
+#info div h2{
+    text-align: left;
+    margin-bottom: 50px;
+}
+#info p a:last-of-type{
+    color: #848689;
+    font-size: 13px;
+}
+#detail li a{
+    color: #2a2a2a;
+    
+}
+
+/* -------------------- Media-Queries -------------------- */
+
+@media (max-width :700px){
+    footer section:first-child div {
+        border-right: none;
+    }
     nav ul li{
         width:100px ;
     }
     nav ul li a{
         padding: 0px;
     }
-    .vide {
+    .videverti,.vide {
         display: none;
     }
     #minilogo{
@@ -335,9 +424,27 @@ form div p{
     #blockform{
         width: 100%;
         justify-content: center;
-        margin: auto;
     }
     #blockform div{
-       margin-left: 5px;
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

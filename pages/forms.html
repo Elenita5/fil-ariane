@@ -15,7 +15,6 @@
             <li id="minilogo"><img src="../assets/img/Capture - Copie.png" alt="" class="logonavbar"></li>
             <li class="button "><a href="../index.html">Accueil</a></li>
             <li class="button"><a href="../pages/boutique.html">Boutique</a></li>
-            <li class="button"><a href="./galerie.html" id="galerie">Galerie</a></li>
             <li class="vide"></li>
             <li><a href=""><img src="../assets/img/basket.png" alt="" class="icon"></a></li>
             <li><a href="./forms.html" class="active"><img src="../assets/img/contact.png" alt="" class="icon"></a></li>
@@ -25,7 +24,7 @@
     <header>
         <div>
             <h1>
-                <img src="../assets/img/Capture.PNG" alt="" class="logo">Chandelles
+                <img src="../assets/img/Capture.PNG" alt="" id="logo">Chandelles
             </h1>
         </div>
     </header>
@@ -34,7 +33,7 @@
         <section class="container-fluid" id="blockform">
             <form action="#" method="get">
                 <div class="row">
-                    <div class="col-lg-5 col-md-5 col-sm-12">
+                    <div class="col-lg-5 col-md-5 col-sm-11">
                         <label for="lname">Nom <sup>*</sup></label> <br>
                         <input type="text" id="lname" name="lname">
                         <br>
@@ -55,7 +54,8 @@
                 <div class="col-lg-12 col-md-12 col-sm-11">
                     <h3> Adresse </h3>
                 </div>
-                <div class="col-lg-12 col-sm-11">
+                
+                <div class="row">
                     <div class="col-lg-5 col-md-5 col-sm-11">
                         <label for="street">Rue<sup>*</sup></label></label> <br>
                         <input type="text" id="street" name="street">
@@ -83,7 +83,7 @@
                         <br>
                     </div>
                 </div>
-                <input type="submit" id="inscription">
+                <input type="submit" id="inscription" class="col-lg-12 col-md-12">
             </form>
         </section>
     </main>
