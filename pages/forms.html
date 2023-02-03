@@ -16,7 +16,7 @@
             <li class="button "><a href="../index.html">Accueil</a></li>
             <li class="button"><a href="../pages/boutique.html">Boutique</a></li>
             <li class="vide"></li>
-            <li><a href=""><img src="../assets/img/basket.png" alt="" class="icon"></a></li>
+            <li><a href="./panier.html"><img src="../assets/img/basket.png" alt="" class="icon"></a></li>
             <li><a href="./forms.html" class="active"><img src="../assets/img/contact.png" alt="" class="icon"></a></li>
             <li><a href=""><img src="../assets/img/loupe.png" alt="" class="icon"></a></li>
         </ul>
@@ -28,24 +28,31 @@
             </h1>
         </div>
     </header>
-    <main>
+    <main id="fondform">
         <h2>Inscription</h2>
         <section class="container-fluid" id="blockform">
             <form action="#" method="get">
-                <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="col-lg-05 col-md-05"></div>
                     <div class="col-lg-5 col-md-5 col-sm-11">
                         <label for="lname">Nom <sup>*</sup></label> <br>
                         <input type="text" id="lname" name="lname">
-                        <br>
                     </div>
-                    <div class="col-lg-05"></div>
+                    <div class="col-lg-05 col-md-1"></div>
                     <div class="col-lg-5 col-md-5 col-sm-11">
                         <label for="fname">Prenom<sup>*</sup></label> <br>
                         <input type="text" id="fname" name="fname">
-                        <br>
+                    </div>
+                </div>  
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="col-lg-3 col-md-3 col-sm-11"></div>
+                    <div class="col-lg-5 col-md-5 col-sm-11">
+                        <label for="birth_date">Date de naissance</label> <br>
+                        <input type="date" id="birth_date" name="birth_date"> 
                     </div>
                 </div>
-                <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="col-lg-3 col-md-3 col-sm-11"></div>
                     <div class="col-lg-5 col-md-5 col-sm-11">
                         <label for="email">E-mail<sup>*</sup></label></label> <br>
                         <input type="email" id="email" name="email">
@@ -55,35 +62,30 @@
                     <h3> Adresse </h3>
                 </div>
                 
-                <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="col-lg-05 col-md-05"></div>
                     <div class="col-lg-5 col-md-5 col-sm-11">
                         <label for="street">Rue<sup>*</sup></label></label> <br>
                         <input type="text" id="street" name="street">
-                        <br>
                     </div>
-                    <div class="col-lg-05 col-md-5 col-sm-11"></div>
-                    <div class="col-lg-5 col-sm-11">
+                    <div class="col-lg-05 col-md-1"></div>
+                    <div class="col-lg-5 col-md-5 col-sm-11">
                         <label for="zipCode">Code Postal<sup>*</sup></label></label> <br>
                         <input type="text" id="zipCode" name="zipCode">
-                        <br>
                     </div>
                 </div>
-                <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="col-lg-3 col-md-3 col-sm-11"></div>
                     <div class="col-lg-5 col-md-5 col-sm-11">
-                        <label for="city">Ville<sup>*</sup></label></label> <br>
+                        <label for="city">Ville<sup>*</sup></label>
                         <input type="text" id="city" name="city">
-                        <br>
                     </div>
                 </div>
-                <div class="col-lg-9 col-md-9"></div>
-                <div class="row">
-                    <div class="col-lg-5 col-md-5 col-sm-11">
-                        <label for="birth_date">Date de naissance</label> <br>
-                        <input type="date" id="birth_date" name="birth_date">
-                        <br>
-                    </div>
+              
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="col-lg-4 col-md-4 col-sm-3"></div>
+                    <input type="submit" id="inscription" class="col-lg-3 col-md-3 col-sm-5">
                 </div>
-                <input type="submit" id="inscription" class="col-lg-12 col-md-12">
             </form>
         </section>
     </main>

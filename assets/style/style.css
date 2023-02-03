@@ -21,7 +21,6 @@ header{
     height: 400px;
     padding:0;
     margin: 0;
-    margin-bottom: 100px;
     position: relative;
 }
 h1{
@@ -298,20 +297,23 @@ article h3{
 /* -------------------- Forms -------------------- */
 form{
     width: 100%;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    
 }
-form div{
-    flex: 1;
+form>div {
+    width: 80%;
+    margin-top: 25px;
 }
-form div label{
-    padding: 5px 0 0 8px;
+
+form label{
+    width: 100%;
 }
 form div input{
     box-sizing: border-box;
     width: 100%;
-    padding: 0px;
-}
-form div h3{
-    margin: 0 0 40px 40px;
 }
 
 form div p{
@@ -319,23 +321,28 @@ form div p{
     font-weight:bold;
     padding: 0 20px;
 }
-form div .col-lg-5{
-    background-color: #bdcce7;
+/* form div .col-lg-5{
     border-radius: 10px;
     padding: 5px 0 15px;
     margin:30px 0;
     height: 25px;
-}
+} */
+#fondform{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+    height: 800px;
+    }
 #blockform{
     width: 40%;
     border-radius: 15px;
     border: 1px #9ea9bd solid;
-    background-color: #e2eaec;
-    
-    display: flex;
-    justify-content: center;
-    margin: 80px auto ;
+    margin: 80px auto;
+    background-color: #f4f7f9;
+    border-radius: 20px;
+    box-shadow: 0px 25px 40px #1687d933;
 }
+
 /* -------------------- Page d'article -------------------- */
 
 
@@ -403,6 +410,19 @@ form div .col-lg-5{
     
 }
 
+/* -------------------- Page panier -------------------- */
+#basket {
+    width: 80%;
+    background-image: none;
+    border-radius: 15px;
+    border: 1px #9ea9bd solid;
+    margin: 80px auto;
+    background-color: #f4f7f9;
+    border-radius: 20px;
+    box-shadow: 0px 25px 40px #1687d933;
+}
+
+
 /* -------------------- Media-Queries -------------------- */
 
 @media (max-width :700px){
@@ -415,6 +435,9 @@ form div .col-lg-5{
     nav ul li a{
         padding: 0px;
     }
+    form input{
+        margin-left: 18px;
+    }
     .videverti,.vide {
         display: none;
     }
@@ -425,10 +448,9 @@ form div .col-lg-5{
         width: 100%;
         justify-content: center;
     }
-    #blockform div{
 
-    }
 }
+
 
 
 
