@@ -15,7 +15,7 @@ nav{
     top: 0px;
     z-index: 2;
 }
-header{
+body>header{
     
     display: flex;
     height: 400px;
@@ -160,7 +160,7 @@ li{
     list-style: none;
     text-align: center;
 }
-h4{
+footer h4{
     color: #eaeaec;
     text-align: center;
 }
@@ -321,12 +321,6 @@ form div p{
     font-weight:bold;
     padding: 0 20px;
 }
-/* form div .col-lg-5{
-    border-radius: 10px;
-    padding: 5px 0 15px;
-    margin:30px 0;
-    height: 25px;
-} */
 #fondform{
     margin: 0;
     padding: 0;
@@ -411,15 +405,68 @@ form div p{
 }
 
 /* -------------------- Page panier -------------------- */
+.btn{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	font-family: 'Open Sans';
+	font-weight: 900;
+	color: #202020;
+	cursor: pointer;
+}
+
 #basket {
     width: 80%;
     background-image: none;
     border-radius: 15px;
     border: 1px #9ea9bd solid;
-    margin: 80px auto;
-    background-color: #f4f7f9;
+    background-color: #efefefef;;
     border-radius: 20px;
     box-shadow: 0px 25px 40px #1687d933;
+    margin-top: 40px;
+    min-height: 250px;
+}
+#imageBox{
+    width: 15%;
+}
+
+#counter {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#count{
+    font-size: 20px;
+    font-weight: 900;
+    color: #202020;
+}
+#imageBox img{
+    width: 100% ;
+   }
+#basket header,#basket main{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+#remove{
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #E44C4C;
+    cursor: pointer;
+}
+#basket header h5{
+    color:#E44C4C;
+    border-bottom: 1px solid #E44C4C;
+    cursor: pointer;
 }
 
 
